@@ -5,9 +5,22 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
   {
     path: 'thevampire-diaries',
     loadChildren: () => import('./series/thevampire-diaries/thevampire-diaries.module').then( m => m.ThevampireDiariesPageModule)
+  },
+  {
+    path: 'flash',
+    loadChildren: () => import('./series/flash/flash.module').then( m => m.FlashPageModule)
+  },
+  {
+    path: 'ad-astra',
+    loadChildren: () => import('./filmes/ad-astra/ad-astra.module').then( m => m.AdAstraPageModule)
+  },
+  {
+    path: 'resgate',
+    loadChildren: () => import('./filmes/resgate/resgate.module').then( m => m.ResgatePageModule)
   },
   {
     path: 'ursinhos-carinhosos',
@@ -16,7 +29,7 @@ const routes: Routes = [
   {
     path: 'georgeo-curioso',
     loadChildren: () => import('./desenhos/georgeo-curioso/georgeo-curioso.module').then( m => m.GeorgeoCuriosoPageModule)
-  }
+  },
 ];
 @NgModule({
   imports: [
