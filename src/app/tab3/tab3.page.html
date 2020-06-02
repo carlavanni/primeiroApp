@@ -1,17 +1,96 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+ <ion-header>
+  <ion-toolbar color="danger">
     <ion-title>
-      Tab 3
+      Desenhos 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-list>
+
+  
+    <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="assets/ursinhos.jpg">
+      </ion-thumbnail>
+      
+      <ion-label routerLink="/ursinhos-carinhosos">
+       Ursinhos Carinhosos
+      </ion-label>
+
+      <div slot="end" class="c100 p62 small">
+        <span>62%</span>
+         <div class="slice">
+           <div class="bar"></div>
+           <div class="fill"></div>
+           
+         </div>
+      </div>
+    </ion-item>
+
+
+
+    <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="assets/george.jpg">
+      </ion-thumbnail>
+      
+      <ion-label routerLink="/georgeo-curioso">
+       George O Curioso
+      </ion-label>
+
+      <div slot="end" class="c100 p60 small">
+        <span>60%</span>
+         <div class="slice">
+           <div class="bar"></div>
+           <div class="fill"></div>
+           
+         </div>
+      </div>
+    </ion-item>
+
+
+    <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="assets/caillou.jpg">
+      </ion-thumbnail>
+      
+      <ion-label>
+       Caillou
+      </ion-label>
+
+      <div slot="end" class="c100 p79 small orange">
+        <span>79%</span>
+         <div class="slice">
+           <div class="bar"></div>
+           <div class="fill"></div>
+           
+         </div>
+      </div>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="assets/pink.jpg">
+      </ion-thumbnail>
+      
+      <ion-label>
+        Pinky Dinky Doo
+      </ion-label>
+
+      <div slot="end" class="c100 p80 small green">
+        <span>80%</span>
+         <div class="slice">
+           <div class="bar"></div>
+           <div class="fill"></div>
+           
+         </div>
+      </div>
+    </ion-item>
+
+
+  </ion-list>
+  
 </ion-content>

@@ -14,3 +14,12 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class Tab1PageRoutingModule {}
+
+
+
+
+
+
+
+
+
