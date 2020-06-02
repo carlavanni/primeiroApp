@@ -5,19 +5,6 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  },
-  {
-    path: 'ad-astra',
-    loadChildren: () => import('./filmes/ad-astra/ad-astra.module').then( m => m.AdAstraPageModule)
-  },
-  {
-    path: 'resgate',
-    loadChildren: () => import('./filmes/resgate/resgate.module').then( m => m.ResgatePageModule)
-  },
-  {
-    path: 'flash',
-    loadChildren: () => import('./series/flash/flash.module').then( m => m.FlashPageModule)
-  },
   {
     path: 'thevampire-diaries',
     loadChildren: () => import('./series/thevampire-diaries/thevampire-diaries.module').then( m => m.ThevampireDiariesPageModule)
